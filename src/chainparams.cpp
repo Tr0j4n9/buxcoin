@@ -48,10 +48,10 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0x20;
-		pchMessageStart[1] = 0xc6;
-        pchMessageStart[2] = 0xed;
-		pchMessageStart[3] = 0xf2;
+        pchMessageStart[0] = 0x21;
+	pchMessageStart[1] = 0x62;
+        pchMessageStart[2] = 0xe3;
+	pchMessageStart[3] = 0xf4;
         vAlertPubKey = ParseHex("");
         nDefaultPort = 25950;
         nRPCPort = 25850;
@@ -89,13 +89,13 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x62871020f6bc233fb1df06901061be04696ece351350e980645412a8de336a5d"));
 
 		
-        vSeeds.push_back(CDNSSeedData("seed1", "185.69.55.38"));
-        vSeeds.push_back(CDNSSeedData("seed2", "194.135.80.127"));
-		vSeeds.push_back(CDNSSeedData("seed3", "185.69.54.62"));
-		vSeeds.push_back(CDNSSeedData("seed4", "194.135.95.237"));
-		vSeeds.push_back(CDNSSeedData("seed5", "198.13.55.113")); //node1_vultr
-		vSeeds.push_back(CDNSSeedData("seed6", "45.32.37.19")); //node2_vultr
-		vSeeds.push_back(CDNSSeedData("seed7", "45.77.32.52")); //node3_vultr
+        //vSeeds.push_back(CDNSSeedData("seed1", "185.69.55.38"));
+        //vSeeds.push_back(CDNSSeedData("seed2", "194.135.80.127"));
+		//vSeeds.push_back(CDNSSeedData("seed3", "185.69.54.62"));
+		//vSeeds.push_back(CDNSSeedData("seed4", "194.135.95.237"));
+		//vSeeds.push_back(CDNSSeedData("seed5", "198.13.55.113")); //node1_vultr
+		//vSeeds.push_back(CDNSSeedData("seed6", "45.32.37.19")); //node2_vultr
+		//vSeeds.push_back(CDNSSeedData("seed7", "45.77.32.52")); //node3_vultr
 		
         
         base58Prefixes[PUBKEY_ADDRESS] = list_of(26);
