@@ -65,19 +65,19 @@ public:
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
         //    CTxOut(empty)
         //  vMerkleTree: 12630d16a9
-        const char* pszTimestamp = "Buxcoin A New Blockchain Technology 3/17";
+        const char* pszTimestamp = "Bitcoin Tumbled Following South Korean Exchange Hack";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1490278158, vin, vout, 0);
+        CTransaction txNew(1, 1529291717, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1490278158;
+        genesis.nTime    = 1529291717;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact(); 
         genesis.nNonce   =  644649;
 	 
