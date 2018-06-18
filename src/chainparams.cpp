@@ -85,7 +85,7 @@ public:
 	 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00000d4d8f2191287cc02e21bd98da4602ec17869681fc5cc104594265b939e3"));
+        assert(hashGenesisBlock == uint256("0x2e730a80fdce90067920ac6648e8216f71fc7b81b5d8b12754625bc2edf59e0c"));
         assert(genesis.hashMerkleRoot == uint256("0x45037206485b8f379bb666ba09ef24e475759906ae6f8da7794224ec48ef6fa8"));
 
 		
