@@ -134,7 +134,7 @@ public:
         // a large 4-byte int at any alignment.
         pchMessageStart[0] = 0x22;
         pchMessageStart[1] = 0xc3;
-		pchMessageStart[2] = 0x33;
+	pchMessageStart[2] = 0x33;
         pchMessageStart[3] = 0x14;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("");
